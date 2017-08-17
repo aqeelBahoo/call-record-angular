@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body ng-app="myApp">
+<nav class="navbar navbar-default navbar-static-top custom-navbar">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed custom-navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                theCALL
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="navbar-nav"><a href="#">New call <span class="sr-only">(current)</span></a></li>
+                <li class="navbar-nav"><a href="#">New group</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown custom-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        FirstName lastName <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu custom-header-dropdown-menu">
+                        <li><a href="#" class="header-dropdown-account">My account</a></li>
+                        <li><a href="#" class="header-dropdown-account">Logout</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact/imprint</a></li>
+                        <li><a href="#">Data protection</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Conditions</a></li>
+                        <li><a href="#" class="header-dropdown-admin">Admin tools</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<a href="#group-detail"><button class="btn">group detail</button></a>
+<a href="#history"><button class="btn">history</button></a>
+<a href="#login"><button class="btn">log in</button></a>
+<a href="#my-account"><button class="btn">my account</button></a>
+<a href="#user-list"><button class="btn">user list</button></a>
+<a href="#home"><button class="btn">home</button></a>
+
+<div ng-view class="container"></div>
+
+<script src="../lib/jquery/dist/jquery.min.js"></script>  <!--jquery library-->
+<script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../scripts/angular.js"></script>
+<script src="../scripts/angular-route.js"></script>
+<script src="../scripts/app.js"></script>
+</body>
+</html>
